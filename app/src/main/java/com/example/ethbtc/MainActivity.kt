@@ -21,14 +21,14 @@ class MainActivity : AppCompatActivity() {
         loginBTN.setOnClickListener{
             if(mailfield.text.length >= 8) {
                 if(passwordfield.text.length >= 8){
-                    val intent = Intent(this@MainActivity, signupactivity::class.java)
-                    startActivity(intent)
+                    //sdfsdfb
                 }
             }
         }
 
         signupBTN.setOnClickListener{
-            //change activity
+            val intent = Intent(this@MainActivity, signupactivity::class.java)
+            startActivity(intent)
         }
     }
 
