@@ -1,5 +1,7 @@
 package com.example.ethbtc
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,7 +21,8 @@ class MainActivity : AppCompatActivity() {
         loginBTN.setOnClickListener{
             if(mailfield.text.length >= 8) {
                 if(passwordfield.text.length >= 8){
-                    // change activity
+                    val intent = Intent(this@MainActivity, signupactivity::class.java)
+                    startActivity(intent)
                 }
             }
         }
@@ -28,8 +31,6 @@ class MainActivity : AppCompatActivity() {
             //change activity
         }
     }
-
-
 
 
 
